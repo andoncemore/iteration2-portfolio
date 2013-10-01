@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type='text/css' href='css/stylesheet.css'>
+		<style>
+			@media screen and (max-width: 740px) {
+			  	div.block {
+			    	width: 32%;
+			  	}
+			  	div.block:nth-of-type(4n+1) {
+			    	margin-left: 1%;
+			    	clear: none;
+			  	}
+			  	div.block:nth-of-type(3n+1) {
+			    	margin-left: 1%;
+			    	clear: left;
+			  	}
+			  	div.block h1 {
+			    	font-size: 1.5em;
+			  	}
+			}
+			@media screen and (max-width: 600px) {
+			  	div.block {
+			    	width: 48.5%;
+			  	}
+			  	div.block:nth-of-type(3n+1) {
+			    	clear: none;
+			    	margin-left: 1%;
+			  	}
+			  	div.block:nth-of-type(2n+1) {
+			    	margin-left: 1%;
+			    	clear: left;
+			  	}
+			}
+			@media screen and (max-width: 400px) {
+			  	div.block {
+			    	width: 100% !important;
+			    	margin-left: 0 !important;
+			    	clear: none !important;
+			  	}
+			  	div.block figcaption h1 {
+			    	font-size: 3em;
+			  	}
+			  	div.block figcaption a {
+			    	font-size: 2em;
+			  	}
+			}
+		</style>
+	<body>
+		<div id="title-header">
+			-ADIT DHANUSHKODI-
+		</div>	
+		<header>
+			<nav><a href='about.html'>About</a><a href='artwork.html'>Artwork</a><a href='resume/resume_current.pdf'>Resume</a></nav>
+			<h1><a href="#">Portfolio</a></h1>
+		</header>	
+		<div class='contentWrapper'>
+			<div class='block' class="theme1">
+				<img src='assets/gesture_edit.png'>
+				<figcaption>
+					<h1>Webcam Based Gesture Control</h1>
+					<a href="portfolio/gesture.html">Read More</a>	
+				</figcaption>	
+			</div>
+			<div class='block' class="theme2">
+				<img src='assets/gibbon_edit.png'>
+				<figcaption>
+					<h1>Design of a Bio Inspired Transporter Toy</h1>
+					<a href="portfolio/gibbon.html">Read More</a> 
+				</figcaption>	
+			</div>
+			<div class='block' class="theme3">
+				<img src="assets/kanjam_edit.png">
+				<figcaption>	
+					<h1>The Mechanics<br />of Kan Jam</h1>
+					<a href="portfolio/kanjam.html">Read More</a>
+				</figcaption>	
+			</div>
+			<div class='block' class="theme4">
+				<img src="assets/fleet_edit.png">
+				<figcaption>
+					<h1>Creating and Developing a Shoe Startup</h1>		
+					<a href="portfolio/fleet.html">Read More</a>
+				</figcaption>
+			</div>
+			<div class='block' class="theme4">
+				<img src="assets/website_edit.png">
+				<figcaption>
+					<h1>Building a Responsive Website</h1>		
+					<a href="portfolio/website.html">Read More</a>
+				</figcaption>
+			</div>
+		</div>	
+	</body>	
+</html>
+
