@@ -1,0 +1,4 @@
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('../font/ostrich-regular.eot?') format('eot'), url('../font/ostrich-regular.woff') format('woff'), url('..font/ostrich-regular.ttf') format('truetype');
+}
