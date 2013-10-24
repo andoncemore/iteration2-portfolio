@@ -18,18 +18,18 @@ body {
 .contentWrapper {
   display: block;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 0.75%;
 }
 div.block {
   background: #eee;
   position: relative;
   float: left;
-  margin-left: 1%;
-  margin-bottom: 1%;
-  width: 23.75%;
+  margin-left: 0.25%;
+  margin-bottom: 0.25%;
+  width: 24.6875%;
 }
 div.block:nth-of-type(4n+1) {
-  margin-left: 1%;
+  margin-left: 0.25%;
   clear: left;
 }
 div.block img {
@@ -38,7 +38,7 @@ div.block img {
   display: block;
 }
 div.block:hover figcaption {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 div.block figcaption {
   position: absolute;
@@ -148,27 +148,49 @@ header h3 {
   opacity: 0.6;
   z-index: 1000000;
 }
+.articleTitle {
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 2.5%;
+  padding-top: 1%;
+  padding-right: 2%;
+}
+.articleTitle h2 {
+  font-family: 'Oswald', 'PT Sans Narrow';
+  font-weight: 100;
+  font-size: 2.5em;
+  padding-left: 5%;
+  line-height: 100%;
+  color: #00b8ab;
+}
+.articleTitle h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1em;
+  padding-left: 5%;
+  color: white;
+}
+.articleTitle #prev {
+  float: right;
+}
+.articleTitle p {
+  color: white;
+  padding: 1%;
+  font-family: 'Oswald';
+  font-weight: 100;
+  font-size: 1.2em;
+  border: 2px solid white;
+  margin-right: 1%;
+}
+.articleTitle p:hover {
+  border: 1px solid #ffffff;
+}
 article {
   max-width: 800px;
   padding: 0 5%;
   margin: 0 auto;
-  padding-top: 2.5%;
+  padding-top: 0.5%;
   padding-bottom: 5%;
   width: 80%;
-}
-article h2 {
-  font-family: 'Oswald', 'PT Sans Narrow';
-  font-weight: 400;
-  font-size: 2.5em;
-  margin: 0;
-  line-height: 100%;
-  color: #00b8ab;
-}
-article h3 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 1em;
-  color: black;
 }
 article .description {
   margin: 2% auto;
@@ -240,6 +262,9 @@ article p {
   width: 100%;
   margin: 0 auto;
   max-width: 940px;
+}
+.special_body {
+  background: #fdfbf0;
 }
 .attachments {
   margin-top: 5%;

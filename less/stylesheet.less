@@ -6,7 +6,7 @@
 @import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
 
 // Variables
-@boxMargin: 1%;
+@boxMargin: 0.25%;
 // @green:#00AA70;
 @green:#00B8AB;
 @blue:#005CA3;
@@ -25,7 +25,7 @@ body{
 .contentWrapper{
 	display:block;
 	width:100%;
-	margin-top:2%;
+	margin-top:0.75%;
 }
 
 div.block{
@@ -48,7 +48,7 @@ div.block{
 	
 	&:hover{
 		figcaption{
-			opacity:0.9;
+			opacity:0.8;
 			
 		}
 	}
@@ -170,21 +170,18 @@ header {
 	
 }
 
-article{
-	max-width:800px;
-	padding:0 5%;
-	
-	margin:0 auto;
-	padding-top:2.5%;
-	padding-bottom: 5%;
-	width:80%;
+.articleTitle{
+	background: rgba(0, 0, 0, 0.7);
+	margin-top:2.5%;
+	padding-top:1%;
+	padding-right:2%;
 
-	
 	h2{
 		font-family: 'Oswald','PT Sans Narrow';
-		font-weight:400;
+		font-weight:100;
 		font-size: 2.5em;
-		margin:0;
+
+		padding-left:5%;
 		line-height:100%;
 		color:@green;
 	}
@@ -192,8 +189,41 @@ article{
 		margin:0;
 		font-weight:400;
 		font-size:1em;	
-		color:black;
+		padding-left:5%;
+		color:white;
+
 	}
+
+	#prev{
+		float:right;
+	}
+
+	p{
+		color:white;
+		padding:1%;
+		font-family:'Oswald';
+		font-weight:100;
+		font-size:1.2em;
+		border:2px solid white;
+		margin-right:1%;
+		&:hover{
+			border:1px solid white
+		}
+
+	}
+
+
+}
+
+article{
+	max-width:800px;
+	padding:0 5%;
+	
+	margin:0 auto;
+	padding-top:0.5%;
+	padding-bottom: 5%;
+	width:80%;
+
 
 	.description{
 		margin: 2% auto;
@@ -268,6 +298,10 @@ article{
 		margin:0 auto;
 		max-width: 940px;
 	}
+}
+
+.special_body{
+	background:@tan;
 }
 
 
