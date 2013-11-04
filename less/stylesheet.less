@@ -28,6 +28,20 @@ body{
 	margin-top:0.75%;
 }
 
+#about{
+
+	figcaption{
+		background:rgba(0, 0, 0,0.8);
+	}
+}
+
+#specialAbout{
+	&:hover{
+		.transition;
+		opacity:0.5;
+	}
+}
+
 div.block{
 	background:#eee;
 	position:relative;
@@ -48,7 +62,7 @@ div.block{
 	
 	&:hover{
 		figcaption{
-			opacity:0.8;
+			opacity:1;
 			
 		}
 	}
@@ -57,7 +71,7 @@ div.block{
 		position:absolute;
 		top:0;
 		left:0;
-		background:@green;
+		background:rgba(0, 184, 171,0.6);
 		vertical-align: middle;
 		height:90%;
 		min-height:90%;
@@ -171,7 +185,8 @@ header {
 }
 
 .articleTitle{
-	background: rgba(0, 0, 0, 0.7);
+	background: url('../assets/darkdenim3.png');
+	-webkit-box-shadow: 0px 2px 10px 0px black;
 	margin-top:2.5%;
 	padding-top:1%;
 	padding-right:2%;
@@ -216,49 +231,71 @@ header {
 }
 
 article{
-	max-width:800px;
-	padding:0 5%;
-	
-	margin:0 auto;
 	padding-top:0.5%;
 	padding-bottom: 5%;
-	width:80%;
 
-
-	.description{
-		margin: 2% auto;
-		width:75%;
-		padding:1%;
-		.rounded-corners;
-		h4{
-			margin:0;
-			font-size: 2em;
-			font-family: 'Oswald','PT Sans Narrow';
-			font-weight:100;
-			color:black;
-			letter-spacing:5px;
-			text-align: center;
-			padding-bottom: 5px;
-		}
-		p{
-			text-align: center;
-			padding-bottom: 5px;
-		}
-			
-	}
-	h4{
-		margin:0;
-		font-family: 'Oswald','PT Sans Narrow';
-		font-size: 2em;
-		font-weight: 100;
-		letter-spacing: 1px;
+	.backgroundBox{
+		padding: 1% 0 1%;
+		width:100%;
 		margin-top:2%;
+		
 	}
-	p{
-		margin:0;
-		margin-bottom:10px;
-		color:black;
+	#theme1{
+		background: url('../assets/darkdenim3.png');
+		-webkit-box-shadow: 0px 2px 10px 0px black;
+		color:white;
 	}
+
+	#theme2{
+		color:@gray;
+	}
+	.textBlock{
+		display:block;
+		width:80%;
+		height:auto;
+		margin:0 auto;
+		max-width:800px;
+		
+		.image{
+			display:inline-block;
+			width:47.5%;
+			img{
+				width:100%;
+				border:2px solid @green;
+			}
+		}
+		#headerImg{
+			width:20%;
+			margin-right:3%;
+
+			img{
+				border:10px solid @green;
+				-webkit-box-shadow: 0px 2px 10px 0px black;
+			}
+		}
+
+		#headerCap{
+			width:70%;
+			font-size:1.2em;
+			color:@green;
+		}
+
+		.caption{
+			display:inline-block;
+			width:47.5%;
+			vertical-align: top;
+			padding:0 1.25%;
+			
+		}
+
+
+
+	}
+	#headerBox{
+		font-size:1.1em;
+
+	}
+
 }
 //Youtube Embedding
 .youtube-container {
@@ -307,6 +344,7 @@ article{
 
 .attachments{
 	margin-top:5%;
+	margin-left:5%;
 	li{
 		display:inline-block;
 		background:@green;
