@@ -9,11 +9,14 @@
 @import url('http://fonts.googleapis.com/css?family=Oswald:400,700,300');
 
 @import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
 body {
   font-size: 16px;
-  font-family: 'PT Serif', serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   background: url('../assets/debut_light.png');
+  background: white;
 }
 .contentWrapper {
   display: block;
@@ -100,7 +103,6 @@ header {
   color: black;
   font-family: 'Oswald', 'PT Sans Narrow';
   z-index: 100000000;
-  -webkit-box-shadow: 0px 2px 10px 0px black;
 }
 header h1 {
   display: block;
@@ -159,96 +161,110 @@ header h3 {
   opacity: 0.6;
   z-index: 1000000;
 }
-.articleTitle {
-  background: url('../assets/darkdenim3.png');
-  -webkit-box-shadow: 0px 2px 10px 0px black;
-  margin-top: 2.5%;
-  padding-top: 1%;
-  padding-right: 2%;
-}
-.articleTitle h2 {
-  font-family: 'Oswald', 'PT Sans Narrow';
-  font-weight: 100;
-  font-size: 2.5em;
-  padding-left: 5%;
-  line-height: 100%;
-  color: #00b8ab;
-}
-.articleTitle h3 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 1em;
-  padding-left: 5%;
-  color: white;
-}
-.articleTitle #prev {
-  float: right;
-}
-.articleTitle p {
-  color: white;
-  padding: 1%;
-  font-family: 'Oswald';
-  font-weight: 100;
-  font-size: 1.2em;
-  border: 2px solid white;
-  margin-right: 1%;
-}
-.articleTitle p:hover {
-  border: 1px solid #ffffff;
-}
 article {
-  padding-top: 0.5%;
-  padding-bottom: 5%;
-}
-article .backgroundBox {
-  padding: 1% 0 1%;
   width: 100%;
-  margin-top: 2%;
 }
-article #theme1 {
-  background: url('../assets/darkdenim3.png');
-  -webkit-box-shadow: 0px 2px 10px 0px black;
-  color: white;
+article .header {
+  margin-bottom: 5%;
 }
-article #theme2 {
-  color: #595959;
+article .header #gibbon {
+  background-image: url('../assets/gibbon_hero.png');
 }
-article .textBlock {
-  display: block;
+article .header #fleet {
+  background-image: url('../assets/fleet_hero.png');
+}
+article .header #energy {
+  background-image: url('../assets/energy_hero.png');
+}
+article .header #website {
+  background-image: url('../assets/website_hero.png');
+}
+article .header #camera {
+  background-image: url('../assets/camera_hero.png');
+}
+article .header .image {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  position: relative;
+  margin-top: 0.5%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+article .header .image h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1;
+  color: #303030;
+}
+article .header .image h4 {
+  text-align: center;
+  font-weight: 300;
+  color: #303030;
+  padding-top: 3%;
+}
+article .header .image h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #303030;
+}
+article .header .image p {
+  text-align: center;
+  margin-top: 2.5%;
+}
+article .header .image p a {
+  text-decoration: none;
+  color: #303030;
+  border: 1px solid white;
+  padding: 0.5%;
+  font-weight: 300;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+article .header .image p a:nth-of-type(even) {
+  margin-left: 1%;
+}
+article .header .image p a:hover {
+  border: 2px solid white;
+}
+article .content {
   width: 80%;
-  height: auto;
-  margin: 0 auto;
   max-width: 800px;
+  margin: 0 auto;
 }
-article .textBlock .image {
-  display: inline-block;
-  width: 47.5%;
+article .content .section h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  color: black;
 }
-article .textBlock .image img {
+article .content .section .image {
+  width: 50%;
+  margin: 5% 25%;
+}
+article .content .section .image img {
+  border: 2px solid black;
   width: 100%;
-  border: 2px solid #00b8ab;
 }
-article .textBlock #headerImg {
-  width: 20%;
-  margin-right: 3%;
+article .content .section .image p {
+  text-align: center;
 }
-article .textBlock #headerImg img {
-  border: 10px solid #00b8ab;
-  -webkit-box-shadow: 0px 2px 10px 0px black;
+article .content .section p {
+  font-weight: 300;
+  letter-spacing: 0.175px;
 }
-article .textBlock #headerCap {
-  width: 70%;
-  font-size: 1.2em;
+article h2 {
+  text-align: center;
+  margin: 5% 0;
+  font-weight: 500;
   color: #00b8ab;
-}
-article .textBlock .caption {
-  display: inline-block;
-  width: 47.5%;
-  vertical-align: top;
-  padding: 0 1.25%;
-}
-article #headerBox {
-  font-size: 1.1em;
 }
 .youtube-container {
   display: block;
@@ -305,7 +321,7 @@ article #headerBox {
   border-radius: 5px;
 }
 .attachments li:hover {
-  background: #595959;
+  background: #303030;
 }
 .attachments li a {
   color: white;
@@ -322,3 +338,9 @@ article #headerBox {
   padding-right: 15px;
 }
 /* Mixins */
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

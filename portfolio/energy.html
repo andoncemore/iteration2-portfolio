@@ -37,6 +37,11 @@
 			  	body{
 			  		font-size: 12px;
 			  	}
+
+			  	body article .header .image{
+			  		height:250px;
+
+			  	}
 			}
 		</style>
 	</head>
@@ -49,63 +54,47 @@
 			<h1><a href="../index.html">PORTFOLIO</a></h1>
 		</header>	
 
-		<div class='articleTitle'>
-			<a href='website.html'><p id='prev'>NEXT</p></a>
-			<a href='fleet.html'><p id='prev'>PREV</p></a>
-			<h2>AEROELASTIC ENERGY HARVESTING</h2>
-			<h3>Summer 2013 | 2 Person Research Project</h3>
-		</div>	
 
 		<article>
 
-			<div class='backgroundBox' id='theme2'>
-				<div class='textBlock'>
-					<div class='image'id='headerImg'>
-						<img src="../assets/energy.png">
-					</div>	
-					<div class='caption' id='headerCap'>
-						I worked on research with one other person on building and modeling an energy harvester, that takes advantage of vibration. This was a research project that was worked on for multiple years. I worked on redesigning specific parts of the test rig and improving the mathematical model we had for the system. 
-					</div>	
-
+			<div class="header">
+				<div class="image" id="energy">
+					<h4>Project 3</h4>
+					<h1>AEROELASTIC ENERGY HARVESTING</h1>
+					<h3>Summer 2013 | 2 PERSON RESEARCH PROJECT</h3>
+					<p><a href='fleet.html'>PREV PROJECT</a><a href='website.html'>NEXT PROJECT</a></p>
 				</div>	
-			</div>	
+			</div>
 			
-			<div class="backgroundBox" id='theme1'>
-				<div class="textBlock">
-					<div class='caption' >
-						One section of the test rig I redesigned was the torsional setup of an airfoil. I completely redesigned weights on the end of a torsional rod to be modular, so the system could easily be modified for various tests.
-					</div>	
-					<div class='image' >
-						<img src="../assets/energy/2013-10-02 10.43.01 HDR.jpg">
-					</div>
-				</div>
-			</div>	
-
-			<div class="backgroundBox" id='theme2'>
-				<div class="textBlock">
-					<div class='image'>
-						<img src="../assets/energy/2013-10-02 10.42.42 HDR.jpg">
-					</div>
-					<div class='caption'>
-						I also worked on redesigning the energy harvester, which consists of a pvc tube, with two fixed magnets on either end, and one floating magnet in the middle, which is attached to the airfoil. I helped redesign the system so that it could have a variable number of magnets on either end and a mounting piece to fix to harvester to the test rig. 
-					</div>	
-				</div>
-			</div>	
-
-<!-- 			<div class="backgroundBox" id='theme1'>
-				<div class="textBlock">
+			<div class='content'>	
+				<div class='section'>
+					<h1>Background</h1>
+					<p>I worked on research with one other person on building and modeling an energy harvester, that takes advantage of vibration. This was a research project that was worked on for multiple years. I worked on redesigning specific parts of the test rig and improving the mathematical model we had for the system.</p>
+				</div>	
+				<div class="section">
+					<h1>Mechanical Design</h1>
+					<p>The mechanical design aspect of this project was redesigning parts of the test rig to improve the quality of the experimental tests we were doing. The main part that I redesigned was the torsional setup. The airfoil is mounted on a torsional rod in a windtunnel. One of the variables we wanted to be able to control is the moment of inertia of the airfoil. To do this, I designed and built weights to mount to the airfoil to vary the moment of inertia. Using Solidworks, I was able to design various weights that could be combined to achieve a varying range of moments for the airfoil. The weights were cut out of steel plate on a waterjet, and mounting blocks were made on a manual mill. </p>
 					<div class='image'>
 						<img src="../assets/energy/2013-10-02 10.43.01 HDR.jpg">
+						<p>Figure 1. A close up on the torsional setup. On the left, the moment of inertia weights are visible.</p>
 					</div>
-					<div class='caption'>
-						This was a personal project where I designed and built a fully responsive personal portfolio website from scratch in html, css and javascript. I made simple wireframes, iterated between designs, and coded the entire site in html and css from scratch.
-					</div>	
 				</div>
-			</div>	 -->
+				<div class="section">
+					<h1>Mechanical Analysis</h1>
+					<p>The other part of this project was mechanical analysis. We had to match the physical results to a model we made in MATLAB. To do this, we needed to take physical measurements from the test rig and calculate constants. These constants were then put into the MATLAB model. We took many experiments, like the one below, and were able to extract enough information to fully characterize the system mathematically. </p>
+					<div class='image'>
+						<img src="#">
+						<p>Figure 2. Above is the response of the airfoil, plotted versus time. This plot contains all the information to calculate the constants to characterize the system.</p>
+					</div>	
+				</div>	
+				<hr>	
+			</div>	
 
-		
-			
+			<h2>BY ADIT DHANUSHKODI (2013)</h2>
+
 		</article>	
+
+			
 	</body>	
 </html>
 

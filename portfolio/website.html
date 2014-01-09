@@ -31,11 +31,17 @@
 			  	}
 
 
+
 			}
 
 			@media only screen and (max-width: 400px) {
 			  	body{
 			  		font-size: 12px;
+			  	}
+
+			  	body article .header .image{
+			  		height:250px;
+
 			  	}
 			}
 		</style>
@@ -49,63 +55,52 @@
 			<h1><a href="../index.html">PORTFOLIO</a></h1>
 		</header>	
 
-		<div class='articleTitle'>
-			<a href='gibbon.html'><p id='prev'>NEXT</p></a>
-			<a href='energy.html'><p id='prev'>PREV</p></a>
-			<h2>BUILDING A RESPONSIVE WEBSITE</h2>
-			<h3>Summer 2013 | Individual Project</h3>
-		</div>	
 
 		<article>
 
-			<div class='backgroundBox' id='theme2'>
-				<div class='textBlock'>
-					<div class='image'id='headerImg'>
-						<img src="../assets/website_edit.png">
-					</div>	
-					<div class='caption' id='headerCap'>
-						This was a personal project where I designed and built a fully responsive personal portfolio website from scratch in html, css and javascript. I made simple wireframes, iterated between designs, and coded the entire site in html and css from scratch.
-					</div>	
-
+			<div class="header">
+				<div class="image" id="website">
+					<h4>Project 4</h4>
+					<h1>BUILDING A RESPONSIVE WEBSITE</h1>
+					<h3>Summer 2013 | INDIVIDUAL PROJECT</h3>
+					<p><a href='energy.html'>PREV PROJECT</a><a href='camera.html'>NEXT PROJECT</a></p>
 				</div>	
-			</div>	
+			</div>
 			
-			<div class="backgroundBox" id='theme1'>
-				<div class="textBlock">
-					<div class='caption' >
-						I began by ideating different layouts for my website based on the content that I expected to be on the site. Once I had the different layouts drawn out, I wrote out pros and cons for each design, and narrowed down my choices. 
-					</div>	
-					<div class='image' >
-						<img src="../assets/website/Layout6.JPG">
+			<div class='content'>	
+				<div class='section'>
+					<h1>Background</h1>
+					<p>During the summer of 2013, I decided to build my own website. I originally planned on using Bootstrap to make the website, but I wanted more control over my design. I ended up building the entire website from scratch. To do this, I taught myself HTML and CSS, and then built the entire website from the ground up.</p>
+				</div>	
+				<div class="section">
+					<h1>Design Choices</h1>
+					<p>The biggest design choice I had was how to layout the portfolio homepage. To make this decision, I did some whiteboard sketches. Using other sites I had seen, and some unique ideas, I put about 10 ideas on the board. Figure 1, below, shows one of the ideas. I narrowed down my choices by which ones would be the easiest to navigate and I could feasibly build. I eventually settled on the simple thumbnail design that I currently use on the site.</p>
+					<div class='image'>
+						<img src="../assets/website/Layout6.jpg">
+						<p>Figure 1. Initial ideation for home page layouts.</p>
 					</div>
-				</div>
-			</div>	
-
-			<div class="backgroundBox" id='theme2'>
-				<div class="textBlock">
+					<p>My first iteration of the website was a fixed width website. While I really liked the design of the webpage, I didn't like how the website didn't really respond to how the reader used their browser. This lead to me making the entire page responsive, using media queries. I experimented using more hover capability. </p>
 					<div class='image'>
 						<img src="../assets/website/iteration1_webpage.png">
+						<p>Figure 2. First iteration, fixed width website.</p>
 					</div>
-					<div class='caption'>
-						My first iteration website was a fixed width website, with only one page. Once I finished this, I began a second iteration, to make the website responsive to all different display sizes. I learned a lot from the first iteration, from not only a design perspective, but also from a coding perspective. These insights helped me design the current version of the site. 
-					</div>	
 				</div>
-			</div>	
-
-			<div class="backgroundBox" id='theme1'>
-				<div class="textBlock">
+				<div class="section">
+					<h1>Writing Code</h1>
+					<p>As I stated earlier, before starting this project, I had no idea how to build a website. I taught myself basic html and css. I built on this basic knowledge by playing around with Bootstrap. By experimenting with Bootstrap's source code, I learned a lot about responsive design. It also introduced me to LESS, and css preprocessing. I applied all this knowledge in my website. The entire process was very iterative and I designed entirely in the browser. I would write some code, see how it looked, and then make changes until I thought it was perfect. </p>
 					<div class='image'>
-						<img src="../assets/website/FreeScreens.jpg">
-					</div>
-					<div class='caption'>
-						My final website displays differently on each display. This shows how the website responds to change in display sizes.  
+						<img src="../assets/website/coding.png">
+						<p>Figure 3. Two of the tools I used to build my website</p>
 					</div>	
-				</div>
+				</div>	
+				<hr>	
 			</div>	
 
-		
-			
+			<h2>BY ADIT DHANUSHKODI (2013)</h2>
+
 		</article>	
+
+
 	</body>	
 </html>
 
